@@ -263,13 +263,13 @@ section .title::after{
     margin-bottom: 30px;
 }
 
-.LGO{
+.LGO {
     justify-content: center;
     float: right;
-    width: 100px;
-    height: 50px;
+    width: 120px;
+    height: 75px;
+}
    
-  }
 strong{
     color:#2ab26f;
 }
@@ -355,15 +355,15 @@ button{
     .max-width{
         max-width: 930px;
     }
-    .about .about-content .column{
+    .about .about-content .column  .container-requirementContainer-cofounderRequirement, .row .max-width{
         width: 100%;
     }
-    .about .about-content .left{
+    .about .about-content .left  .container-requirementContainer-cofounderRequirement, .row .max-width{
         display: flex;
         justify-content: center;
         margin: 0 auto 60px;
     }
-    .about .about-content .right{
+    .about .about-content .right  .container-requirementContainer-cofounderRequirement, .row .max-width{
         flex: 100%;
     }
     .services .serv-content .card{
@@ -374,6 +374,10 @@ button{
     .contact .contact-content .column{
         width: 100%;
         margin-bottom: 35px;
+    }
+
+    .container{
+        max-width: 917px;
     }
 }
 
@@ -393,6 +397,9 @@ button{
     .services .serv-content .card{
         width: 100%;
     }
+    .container{
+        max-width: 660px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -402,7 +409,37 @@ button{
     .home .home-content .text-3{
         font-size: 27px;
     }
-    .about .about-content, .container-requirementContainer-cofounderRequirement, .row {
+    .about .about-content, .container-requirementContainer-cofounderRequirement, .row .max-width{
+        font-size: 19px;
+    }
+    .contact .right form .fields{
+        flex-direction: column;
+    }
+    .contact .right form .name,
+    .contact .right form .email{
+        margin: 0;
+    }
+    .scroll-up-btn{
+        right: 15px;
+        bottom: 15px;
+        height: 38px;
+        width: 35px;
+        font-size: 23px;
+        line-height: 38px;
+    }
+    .container{
+        max-width: 470px;
+    }
+}
+
+@media (max-width: 500px) {
+    .home .home-content .text-2{
+        font-size: 50px;
+    }
+    .home .home-content .text-3{
+        font-size: 27px;
+    }
+    .about .about-content, .container-requirementContainer-cofounderRequirement, .row .max-width{
         font-size: 19px;
     }
     .contact .right form .fields{
