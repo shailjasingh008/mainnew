@@ -27,7 +27,7 @@ html{
 
 /* all similar content styling codes */
 section{
-    padding: 100px 0;
+    padding: 10px 0;
 }
 .max-width{
     max-width: 1300px;
@@ -89,7 +89,7 @@ section .title::after{
 .navbar.sticky{
     padding: 15px 0;
     background: #fff;
-    color:#fff;
+    color:#2ab26f;
 }
 .navbar .max-width{
     display: flex;
@@ -124,7 +124,7 @@ section .title::after{
     color:  #2ab26f;
 }
 .navbar.sticky .menu li a:hover{
-    color: #fff;
+    color: #2ab26f;
 }
 
 /* menu btn styling */
@@ -254,13 +254,13 @@ section .title::after{
 }
 
 .requirementContainer .sections {
-    margin-left: 100px;
-    margin-right: 100px;
-    padding: 20px;
+    width: 80%;
+    padding: 10px;
     box-shadow: 3px 0px 15px 2px rgb(23 55 81 / 25%);
     background-color: #ffffff;
     border-radius: 15px;
     margin-bottom: 30px;
+    transform: translate(10%,5%);
 }
 
 .LGO {
@@ -352,7 +352,7 @@ button{
         font-size: 23px;
         padding: 10px 30px;
     }
-    .max-width{
+    .max-width .sections{
         max-width: 930px;
     }
     .about .about-content .column  .container-requirementContainer-cofounderRequirement, .row .max-width{
@@ -462,7 +462,14 @@ button{
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     [class*="sections "] {
-      width: 80%;
-      margin: auto;
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .home {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
     }
   }
